@@ -26,3 +26,16 @@ pub enum Provider {
 	Coinbase,
 	CoinMarketCap,
 }
+
+impl Provider {
+	pub fn ident(&self) -> u16 {
+		match *self {
+			Provider::Default => 0,
+			Provider::CoinMarketCap => 1,
+			Provider::Coinbase => 2,
+			Provider::BitPay => 3,
+			Provider::Bitfinex => 4,
+			Provider::Bittrex => 5
+		}
+	}
+}
