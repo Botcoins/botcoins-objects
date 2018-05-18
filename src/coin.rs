@@ -19,7 +19,6 @@ pub struct PartialCoin {
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
 pub enum Provider {
-	// Numbers are in order of implementation
 	Default,
 	Bitfinex,
 	BitPay,
