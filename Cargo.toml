@@ -4,5 +4,10 @@ version = "0.1.0"
 authors = ["ConcurrentMarxistGC <concurrentmarxistgc@users.noreply.github.com>"]
 
 [dependencies]
-serde="*"
-serde_derive="*"
+serde = "*"
+serde_derive = "*"
+rocket = { version = "*", optional = true }
+bincode = "*"
+
+[features]
+serverside = ["rocket"]

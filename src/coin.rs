@@ -39,3 +39,5 @@ impl Provider {
 		}
 	}
 }
+
+rocket_response_derive!(Coin, PartialCoin, Provider);

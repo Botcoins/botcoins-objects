@@ -28,3 +28,5 @@ impl Into<Vec<(i64, f64)>> for PriceHistory {
 		return vec;
 	}
 }
+
+rocket_response_derive!(PriceHistory);
